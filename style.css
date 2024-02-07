@@ -1,5 +1,5 @@
 /*Generel styling*/
-
+ 
 * { /*alt på siden bliver påvirket*/
 	box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
 }
@@ -8,11 +8,13 @@ body {
 	font-family: "DM Serif Display", serif;
 	margin: 0 0 5em 0; /*Resetting af margin i hele bodyen + tilføjer luft under kontaktformular*/
 }
- 
+
 h1 {
 	font-size: 50px;
 	line-height: 0.3;
 }
+
+/*Kontaktform*/
 
 .first-line {
     color: #ff1e00;
@@ -28,13 +30,6 @@ h1 {
     margin-right: 150px;
    
 }
-
-.kontakt-tekst{
-	font-weight: 200;
-	font-size: 22px;
-}
-
-/*Kontaktform*/
 
 .container {
 	display: flex;
@@ -107,21 +102,7 @@ button:hover{
 background-color: #333232;
 }
 
-/*Andre style elementer*/
-
-.visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-
-
-/*Responsiv tilpasning*/
+/*Responsiv skal tilpasses!*/
 
 @media only screen and (max-width: 850px){
 	main{
