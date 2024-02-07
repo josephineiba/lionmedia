@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktform LionMedia</title>
     <script src="https://kit.fontawesome.com/8eff645880.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,8 +23,8 @@
 
 <!-- animeret indhold i header -->
     <div class="videocontainer">
-        <video class="video" src="#" frameborder="0" ></iframe>
-        <video class="video" src="#" frameborder="0" ></iframe>   
+        <img class="frontimg" src="img/logo-rund.png" alt="Logo der viser en hvid løve med orange baggrund">
+        <video class="video" autoplay loop muted src="animation/lionmediafront2.mp4" frameborder="0"></iframe>
     </div>
    
 </header>
@@ -40,13 +41,25 @@
             <div><img class="image" src="img/digitalboks.png" alt="Digital Strategi"></div>
         </div>
         <br>
-        <br>
     <h3>Skab din helt personlige pakke her</h3>
+        <div class="knap-pris">
+        <button><a href="#"></a>Få en pris</button>
+        </div> 
     <br>
-    <button type="submit">Få en pris</button>
     <br>
+
+    <!-- tidligere cases -->
+    <div class="cases-box">
+        <br>
+        <h4>Cases</h4>
+        <div class="cases-billeder">
+            <div class="cases" data-aos="slide-left" data-aos-duration="1000"  data-aos-easing="ease-in-out"><img class="case-img" src="img/casegreywolf.png" alt="grey wolf"></div>
+            <div class="cases" data-aos="slide-left" data-aos-duration="1000"  data-aos-easing="ease-in-out"><img class="case-img" src="img/casehard.png" alt="hard skills"></div>
+            <div class="cases" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out"><img class="case-img" src="img/caseweb.png" alt="webtilgængelighed"></div>
+        </div>
+    </div>
     <br>
-    <br>
+    
 
      <!--Kontaktform --> 
     <div class="kontaktform">
@@ -82,27 +95,40 @@
 
 </main>
 
+
 <footer>
-    <footer class="split-footer">
-        <div class="column">
-            <div><img src="img/lionmedialogo.png" alt="lionmedialogo">
-            <h6> +(45) 23 45 56 67 <br> support@lionmedia.dk <br> info@lionmedia.dk <br> CVR: 44019574 </h6>
-            <br>
-            <div><img src="img/tiktoklogo" alt="tiktoklogo"></div>
-            <div><img src="img/instalogo" alt="instalogologo"></div>
-            
-        </div>
-        <div class="column">
-            <h6>Marketing <br> Sociale Medier <br> Webdesign <br> Digital</h6>
-            
-        </div>
-        <div class="column">
-            <h6>Cases <br> Få en pris <br> Om LionMedia</h6>
-          
+    <img src="img/logo-aflang.png" alt="logo">
+    <div class="kolonner">
+        <div class="kolonne1"> 
+            <h6>+(45) 23 45 56 67</h6>
+            <h6>support@lionmedia.dk</h6>
+            <h6>info@lionmedia.dk</h6>
+            <h6>CVR: 44019574</h6>
+            <img src="img/some-logo.png" alt="instagram logo">
         </div>
 
-    </footer>
+        <div class="kolonne2"> 
+            <h6>Marketing</h6>
+            <h6>Sociale medier</h6>
+            <h6>Webdesign</h6>
+            <h6>Digital strategi</h6>
+
+        </div>
+
+        <div class="kolonne3"> 
+            <h6>Cases</h6>
+            <h6>Få en pris</h6>
+            <h6>Om LionMedia</h6>
+        </div>
+        <hr>
+    </div>
+
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

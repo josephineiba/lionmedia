@@ -11,7 +11,7 @@ img{
 
 /*indhold header*/
 header {
-	background-color: #333232;
+	background-color: #2b2b2b;
 	height: 100vh;
 	max-width: auto;
 }
@@ -50,7 +50,12 @@ header {
 }
 
 .video {
-	width: 48%; 
+	width: 50%; 
+	height: auto;
+}
+
+.frontimg {
+	width: 50%;
 	height: auto;
 }
 
@@ -63,12 +68,36 @@ header {
 	margin-right: 30px;
   }
 
-.imagecontainer img {
-	width: 100%;
+.image {
+	width: 110%;
 	height: auto;
-	
+	transition: 1s;
 }
 
+.image:hover{
+	transform:scale(1.1);
+	z-index: 2;
+}
+
+.knap-pris button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 0.5em;
+	border: none;
+	border-radius: 100px;
+	width: 15%;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 40px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+.knap-pris {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
 
 /*tekst og overskrifter*/
 h1{
@@ -88,17 +117,50 @@ h2{
 }
 
 h3{
-	font-size: 30px;
+	font-size: 40px;
 	font-family: "DM Serif Display", serif;
 	text-align: center;
 	color: #333232; 
 	margin-top: 20px;
-	margin-bottom: 100px;
+}
+
+h4{
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #fff; 
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 
 h5 {
-	font-size: 50px;
+	font-size: 60px;
 	line-height: 1;
+}
+
+h6 {
+	font-size: 20px;
+	font-family: "DM Serif Display", serif;
+	color: white;
+}
+
+/*cases box*/
+.cases-billeder{
+	display: flex;
+    justify-content: space-evenly;
+	padding-left: 160px;
+	padding-bottom: 70px;
+}
+
+.case-img{
+	width: 70%;
+	height: auto;
+}
+
+.cases-box {
+	background-color: #333232;
+	height: auto;
+	max-width: auto;
 }
 	
 /*Kontaktform*/
@@ -115,13 +177,14 @@ h5 {
     display: flex;
     justify-content: right;
     margin-right: 150px;
-   
+	margin-bottom: 10px;
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 40px;
 }
 
 form {
@@ -151,6 +214,8 @@ form {
 	padding: 1.3em;
 	width: 50%;
 	margin: 0 auto; /*Centrerer elementet på siden*/
+	margin-bottom: 80px;
+	margin-top: 50px;
   }
 
 input[type=text], input[type=email], input[type=tel], select, textarea {
@@ -177,7 +242,7 @@ button {
 	border: none;
 	border-radius: 100px;
 	width: 25%;
-	font-size: 20px;
+	font-size: 25px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -189,37 +254,50 @@ button:hover{
 background-color: #333232;
 }
 
+/*footer*/
 footer {
 	background-color: #333232;
-	color: #fff;
-	height: 70vh;
-	max-width: auto;
+	height: auto;
+	width: auto;
+} 
+
+footer img{
+	max-width: 15%;
+	height: auto;
+	padding: 20px;
+}
+
+.kolonner{
+	display: grid;
+	grid-template-columns: 30% 5% 30% 5% 30%;
+	padding-left: 20px;
+}
+
+.kolonne1{
+	grid-column-start: 1;
+}
+
+.kolonne1 h6{
+	line-height: 2;
+}
+
+.kolonne2 h6, .kolonne3 h6{
+	line-height: 2;
 	
 }
-.split-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-    color: white;
-    padding: 20px;
+
+.kolonne2{
+	grid-column-start: 3;
 }
 
-.column {
-    flex-basis: 30%;
+.kolonne3{
+	grid-column-start: 5;
 }
 
-.column h6 {
-	color: #fff;
-	font-family: ;
-}
-
-/* For at opdele lodret */
-.split-footer .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+hr{
+	border: 2px solid #fff;
+	width: 100%;
+	margin: 10px 10px; 
 }
 
 /*Responsiv skal tilpasses!*/
