@@ -99,6 +99,13 @@ header {
 	margin-bottom: 40px;
 }
 
+.knap-container{
+	width: 10%;
+	font-size: 20px;
+	margin-left: 70px;
+}
+
+
 /*tekst og overskrifter*/
 h1{
 	font-size: 50px;
@@ -303,10 +310,10 @@ footer img{
 	grid-column-start: 5;
 }
 .insta{
-	width: 150%;
+	width: 200%;
 }
 .tiktok{
-	width: 150%;
+	width: 200%;
 }
 
 hr{
