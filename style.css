@@ -2,21 +2,81 @@
  
 * { /*alt på siden bliver påvirket*/
 	box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
+	margin: 0;
 }
 
-body {
-	font-family: "DM Serif Display", serif;
-	margin: 0 0 5em 0; /*Resetting af margin i hele bodyen + tilføjer luft under kontaktformular*/
+/*indhold header*/
+header {
+	background-color: #333232;
+	height: 100vh;
+	max-width: auto;
 }
 
-h1 {
+.menu-top{
+ 	display: flex;
+	justify-content: space-between;
+	 padding-top: 40px;
+	 padding-left: 60px;
+	 padding-right: 60px;
+}
+
+.menu-hvid {
+	width: 45vw;
+	height: 50px;
+	border-radius: 100px;
+	background-color: #fff;
+}
+
+.fa-bars{
+	display: flex;
+	justify-content: right;
+	margin-right: 20px;
+}
+
+.fa-magnifying-glass{
+	display: flex;
+	justify-content: left;
+	margin-left: 20px;
+	margin-top: 22px;
+}
+
+.videocontainer {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.video {
+	width: 48%; 
+	height: auto;
+}
+
+.tilbud img{
+	height: 400px;
+	width: 300px;
+  }
+
+/*tekst og overskrifter*/
+h1{
 	font-size: 50px;
-	line-height: 0.3;
+	font-family: "DM Serif Display", serif;
+	text-align: left;
+	color: white;
 }
-	main{
-		background-color: #333232;
-	}
 
+h2{
+	font-size: 60px;
+	font-family: "DM Serif Display", serif;
+	text-align: center;
+	color: #333232; 
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+h5 {
+	font-size: 50px;
+	line-height: 1;
+}
+	
 /*Kontaktform*/
 
 .first-line {
@@ -103,6 +163,14 @@ button {
 
 button:hover{
 background-color: #333232;
+}
+
+footer {
+	background-color: #333232;
+	color: #fff;
+	height: 70vh;
+	max-width: auto;
+	
 }
 
 /*Responsiv skal tilpasses!*/
