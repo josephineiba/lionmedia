@@ -139,9 +139,11 @@ h5 {
 }
 
 h6 {
-	font-size: 20px;
+	font-size: 23px;
 	font-family: "DM Serif Display", serif;
 	color: white;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 /*cases box*/
@@ -278,12 +280,19 @@ footer img{
 }
 
 .kolonne1 h6{
-	line-height: 2;
+	line-height: 1;
+	text-align: left;
+	font-size: 23px;
 }
 
 .kolonne2 h6, .kolonne3 h6{
-	line-height: 2;
-	
+	line-height: 0.3;
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 20px;
+	text-align: left;
+	border-bottom: 2px solid #fff;
+	margin-right: 30px;
+	padding-bottom: 20px;
 }
 
 .kolonne2{
@@ -293,11 +302,19 @@ footer img{
 .kolonne3{
 	grid-column-start: 5;
 }
+.insta{
+	width: 150%;
+}
+.tiktok{
+	width: 150%;
+}
 
 hr{
-	border: 2px solid #fff;
-	width: 100%;
-	margin: 10px 10px; 
+	border: 1px solid #fff;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 30px;
 }
 
 /*Responsiv skal tilpasses!*/
