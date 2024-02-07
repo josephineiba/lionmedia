@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktform LionMedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+     <!--Kontaktform - hovedindhold--> 
+    <main class="kontaktform">
+        <h1 class="first-line">Har du</h1>
+        <h1 class="second-line">Spørgsmål?</h1>
+
+    <div class="container">
+       <form>
+        <div class="left">
+            <input id="navn" type="text" placeholder="Navn" required>
+
+            <input id="mail" type="email" placeholder="E-mail" required>
+
+            <input id="tel" type="tel" placeholder="Telefon" required>
+
+            <div class="cirkel-container">
+                <div class="cirkel"></div>
+                <div class="cirkel"></div>
+                <div class="cirkel"></div>
+                <div class="cirkel"></div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <textarea id="besked" cols="10" rows="15" placeholder="Din forespørgsel..." required></textarea> <!--cols og rows definere størrelses på tekstboksen-->
+        </div>
+
+       </form>
+
+        <button type="submit">SEND</button>
+
+    </div>
+</body>
+</html>

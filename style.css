@@ -1,0 +1,151 @@
+/*Generel styling*/
+
+* { /*alt på siden bliver påvirket*/
+	box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
+}
+
+body {
+	font-family: "DM Serif Display", serif;
+	margin: 0 0 5em 0; /*Resetting af margin i hele bodyen + tilføjer luft under kontaktformular*/
+}
+ 
+h1 {
+	font-size: 50px;
+	line-height: 0.3;
+}
+
+.first-line {
+    color: #ff1e00;
+    display: flex;
+   justify-content: left;
+   margin-left: 250px;
+}
+
+.second-line {
+    color: #333232;
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+   
+}
+
+.kontakt-tekst{
+	font-weight: 200;
+	font-size: 22px;
+}
+
+/*Kontaktform*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex: 1;
+}
+
+.left, .right{
+	flex: 1;
+}
+
+.cirkel-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cirkel{
+	width: 60px;
+	height: 60px;
+	background-color: grey;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.kontaktform {
+	border-radius: 5px;
+	padding: 1.3em;
+	width: 50%;
+	margin: 0 auto; /*Centrerer elementet på siden*/
+  }
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+	width: 90%;
+	padding: 1em;
+	border: 1px solid #000;
+    background-color: #EDECEC;
+	border-radius: 50px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+textarea {
+    display: flex;
+    justify-content: right;
+	border-radius: 20px;
+}
+
+button {
+	background-color: #ff1e00;
+	color: #fff;
+	font-family: "DM Serif Display", serif;
+	padding: 0.5em 1.5em;
+	border: none;
+	border-radius: 20px;
+	width: 25%;
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+button:hover{
+background-color: #333232;
+}
+
+/*Andre style elementer*/
+
+.visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+
+/*Responsiv tilpasning*/
+
+@media only screen and (max-width: 850px){
+	main{
+		width: 100% !important;
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.first-line {
+		color: #ff1e00;
+		display: flex;
+	   justify-content: left;
+	   margin-left: 40px;
+	}
+	
+	.second-line {
+		color: #333232;
+		display: flex;
+		justify-content: right;
+		margin-right: 20px;
+	   
+	}
+
+}
